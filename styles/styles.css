@@ -1,0 +1,31 @@
+.navbar-brand{
+    color:white;
+}
+.navbar-brand:hover{
+    color:white;
+}
+
+.navbar-nav{
+    right:0;
+}
+
+.title{
+    font-size:8vw;
+}
+.view-text{
+    font-size:4vw;
+}
+.quote{
+    font-size:2vw;
+}
+#title{
+    z-index:1;
+    position:absolute;
+    top:0;
+    margin: 10% 12%;
+    padding: 3%;
+    width:60%;
+    overflow-wrap:break-word;
+    color:white;
+}
+

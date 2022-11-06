@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+  <body>
+    <!-- nav bar -->
+    <header>
+        <div id="carousel" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/clock.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/generative.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/sound.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/blocked.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="over zindex-fixed w-100">
+            <nav class="navbar fixed-top p-4 navbar-expand-lg w-100 bg-transparent" id="nav">
+                <div class="container-fluid w-100">
+                    <span class="navbar-brand mb-0 h1">Shanting's Portfolio</span>
+                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav position-absolute p-4 navbar-dark">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Works
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Generative</a></li>
+                                <li><a class="dropdown-item" href="#">Interactive</a></li>
+                                <li><a class="dropdown-item" href="#">UI/UX</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="title">
+                <h1 class="title">SHANTING HOU</h1>
+                <h3 class="quote text-light">My experimentations with art and technology</h3>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container-sm my-5 text-left">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row justify-content-center">
+          <div class="col-2 my-2"><h1 class="view-text fw-semibold text-uppercase text-break">INTERSECT</h1></div>
+          <div class="col-4 my-2 p-0"><img class="w-100 m-0" src="images/1.png"></div>
+          <div class="col-4 my-2 p-0"><img class="w-100 m-0" src="images/2.png"></div>
+          
+          <div class="col-4 my-2 p-0"><img class="w-100" src="images/3.png"></div>
+          <div class="col-2 my-2">
+            <h1 class="view-text fw-semibold text-uppercase text-break">INSPIRE</h1></div>
+          <div class="col-4 my-2 p-0"><img class="w-100" src="images/4.png"></div>
+          
+          <div class="col-4 my-2 p-0"><img class="w-100" src="images/5.png"></div>
+          <div class="col-4 my-2 p-0"><img class="w-100" src="images/6.png"></div>
+          <div class="col-2 my-2">
+            <h1 class="view-text fw-semibold text-uppercase text-break">ART + TECH</h1>
+          </div>
+        </div>
+    </div>
+    <div class="accordion my-5 container-sm" id="accordionExample">
+        <h2 class="m-4 display-5">Works</h2>
+        <div class="mx-5">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Generative Art
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="fs-4"><strong>Generative Art:</strong> while learning p5js, I was introduced to the realm of generative art, more specifically generative landscapes. I challenged the balance between control and randomness so that my program produces similar yet unpredictable terrains.</p>
+              <button type="button" class="btn btn-dark fs-5">See works</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Interactive Art
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="fs-4"><strong>Interactive Art:</strong> I started exploring interactive art in highschool, playing with TouchDesigner and Arduino to create interactive experiences employing sound, touch, and light. I continue to experiment with different interactive mediums such as building telematic environments and using facial and body recognition.</p>
+              <button type="button" class="btn btn-dark fs-5">See works</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              UI/UX Design
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="fs-4"><strong>UI/UX Design:</strong> I enjoy challenging myself to create designs that depends on the user—balancing artistic practices that challenge the boundaries of design and an easy user experience.</p>
+              <button type="button" class="btn btn-dark fs-5">See works</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div class="portfolio my-5 container-sm text-left">
+        <h2 class="m-4 display-5">Featured</h2>
+        <div class="row justify-content-center my-4">
+            <div class="col-8 col-md-5 col-lg-3 m-2 ml-auto">
+                <div class="card text-bg-dark border-0">
+                    <img src="images/p1.png" class="card-img w-100" alt="love-alarm">
+                    <div class="card-img-overlay">
+                    <h3 class="card-title">Upper East Side, 2022</h3>
+                    <p class="card-text fs-5">p5js Generative Landscape</p>
+                    <p class="card-text fs-6"><small>
+                        Having grown up living in the city, I wanted to abstractly represent buildings and remind people of living in a city through geometric play with negative space. 
+                    </small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-md-5 col-lg-3 m-2 ml-auto">
+                <div class="card text-bg-dark border-0">
+                    <img src="images/p2.png" class="card-img w-100" alt="love-alarm">
+                    <div class="card-img-overlay">
+                    <h3 class="card-title">Love-Alarm, 2022</h3>
+                    <p class="card-text fs-5">Telematic Environment</p>
+                    <p class="card-text fs-6"><small>
+                      Discover love through this website which notifies you when your crush walks within 50 meters of your proximity and likes you back.</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-md-5 col-lg-3 m-2 ml-auto">
+                <div class="card text-bg-dark border-0">
+                    <img src="images/p3.png" class="card-img w-100" alt="love-alarm">
+                    <div class="card-img-overlay">
+                    <h3 class="card-title">Clock, 2022</h3>
+                    <p class="card-text fs-5">p5js</p>
+                    <p class="card-text fs-6"><small>I wanted to capture the mesmerizing, cyclical element of time that is self-sustaining and haunting yet beautiful.</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-md-5 col-lg-3 m-2 ml-auto">
+              <div class="card text-bg-dark border-0">
+                  <img src="images/p4.png" class="card-img w-100" alt="love-alarm">
+                  <div class="card-img-overlay">
+                  <h3 class="card-title">Untitled, 2022</h3>
+                  <p class="card-text fs-5">p5js, augmented body</p>
+                  <p class="card-text fs-6"><small>I wanted to play with weightless, fluid visuals that respond to one's movement, something that can enhance the lightness of a dancer's movement.</small></p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-8 col-md-5 col-lg-3 m-2 ml-auto">
+                <div class="card text-bg-dark border-0">
+                    <img src="images/p5.png" class="card-img w-100" alt="love-alarm">
+                    <div class="card-img-overlay">
+                    <h3 class="card-title">Cycles, 2021</h3>
+                    <p class="card-text fs-5">Digital interactive media through TouchDesigner</p>
+                    <p class="card-text fs-6"><small>With each encounter of error, the threshold increases and the visuals evolve into something more organic and dynamic—an accumulation of its memories of error.</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-md-5 col-lg-3 m-2 ml-auto">
+                <div class="card text-bg-dark border-0">
+                    <img src="images/p6.png" class="card-img w-100" alt="love-alarm">
+                    <div class="card-img-overlay">
+                    <h3 class="card-title">UI/UX</h3>
+                    <p class="card-text fs-5">html, css, javascript</p>
+                    <p class="card-text fs-6"><small>Sharing my experiences in front-end development</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script>
+        var navBar = document.getElementById("nav");
+        function update(){
+          if (window.pageYOffset > 50){
+            // console.log(navBar.classList);
+            navBar.classList.replace("bg-transparent", "bg-dark");
+          }
+          else{
+            navBar.classList.replace("bg-dark", "bg-transparent");
+          }
+        }
+        setInterval(update, 100);
+    </script>
+    </body>
+</html>
