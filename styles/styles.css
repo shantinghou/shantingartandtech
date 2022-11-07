@@ -10,7 +10,7 @@
 }
 /* font sizes from title, subtitle, and text*/
 .title{
-    font-size:4.5em; 
+    font-size:4em; 
 }
 .view-text{ 
     font-size:4vw;
@@ -22,7 +22,7 @@
 #title{
     z-index:1;
     position:absolute;
-    top:30%;
+    top:20%;
     margin-left: 12%;
     padding: 3%;
     width:60%;
@@ -43,3 +43,12 @@ header{
     height:700px;
 }
 
+/* adjust margin and font-size in desktop size*/
+@media screen and (min-width: 992px){
+    .title{
+        font-size:6em; 
+    }
+    #title{
+        top:25%;
+    }
+}
