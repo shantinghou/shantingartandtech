@@ -1,23 +1,25 @@
+/* editing navbar bootstrap settings */
 .navbar-brand{
     color:white;
 }
 .navbar-brand:hover{
     color:white;
 }
-
 .navbar-nav{
     right:0;
 }
-
+/* font sizes from title, subtitle, and text at the layout section
+    They all resize in response to the window width*/
 .title{
-    font-size:8vw;
+    font-size:8vw; 
 }
-.view-text{
+.view-text{ 
     font-size:4vw;
 }
 .quote{
     font-size:2vw;
 }
+/* specifying the container of the title text */
 #title{
     z-index:1;
     position:absolute;

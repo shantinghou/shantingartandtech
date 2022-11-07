@@ -1,22 +1,27 @@
 <!doctype html>
+<!-- Website: https://shantinghou.github.io/shantingartandtech/ -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- extra styles I added -->
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
 </head>
   <body>
-    <!-- nav bar -->
+    <!-- Header section with carousel as background -->
     <header>
+      <!-- carousel background which goes through images of my work -->
         <div id="carousel" class="carousel slide" data-bs-ride="true">
+            <!-- buttons at the bottom of the header to click through images -->
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
               <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
+            <!-- images displayed in carousel -->
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="images/clock.png" class="d-block w-100" alt="...">
@@ -31,6 +36,7 @@
                 <img src="images/blocked.png" class="d-block w-100" alt="...">
               </div>
             </div>
+            <!-- side buttons for switching between images -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
@@ -40,18 +46,22 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <!-- Navigation bar with dropdown feature and collapse -->
         <div class="over zindex-fixed w-100">
             <nav class="navbar fixed-top p-4 navbar-expand-lg w-100 bg-transparent" id="nav">
                 <div class="container-fluid w-100">
                     <span class="navbar-brand mb-0 h1">Shanting's Portfolio</span>
+                    <!-- collapse button for nav bar -->
                     <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- nav bar -->
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav position-absolute p-4 navbar-dark">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
+                            <!-- dropdown feature for selecting more options under works -->
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Works
@@ -69,6 +79,7 @@
                     </div>
                 </div>
             </nav>
+            <!-- title of the website at the header. It overlays the carousel -->
             <div id="title">
                 <h1 class="title">SHANTING HOU</h1>
                 <h3 class="quote text-light">My experimentations with art and technology</h3>
@@ -76,8 +87,9 @@
         </div>
     </header>
     
-    <div class="container-sm my-5 text-left">
-        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <!-- Playing with containers and columns: Previewing my works integrated with words-->
+    <div class="container-sm my-5 text-left" id="layout">
+        <!-- No matter how small the window, this layout will persist-->
         <div class="row justify-content-center">
           <div class="col-2 my-2"><h1 class="view-text fw-semibold text-uppercase text-break">INTERSECT</h1></div>
           <div class="col-4 my-2 p-0"><img class="w-100 m-0" src="images/1.png"></div>
@@ -95,53 +107,59 @@
           </div>
         </div>
     </div>
+    <!-- Content section for the three main categories of my work in an acordian maner -->
     <div class="accordion my-5 container-sm" id="accordionExample">
         <h2 class="m-4 display-5">Works</h2>
         <div class="mx-5">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Generative Art
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <p class="fs-4"><strong>Generative Art:</strong> while learning p5js, I was introduced to the realm of generative art, more specifically generative landscapes. I challenged the balance between control and randomness so that my program produces similar yet unpredictable terrains.</p>
-              <button type="button" class="btn btn-dark fs-5">See works</button>
+          <!-- first item : generative art -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Generative Art
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p class="fs-4"><strong>Generative Art:</strong> while learning p5js, I was introduced to the realm of generative art, more specifically generative landscapes. I challenged the balance between control and randomness so that my program produces similar yet unpredictable terrains.</p>
+                <button type="button" class="btn btn-dark fs-5">See works</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Interactive Art
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <p class="fs-4"><strong>Interactive Art:</strong> I started exploring interactive art in highschool, playing with TouchDesigner and Arduino to create interactive experiences employing sound, touch, and light. I continue to experiment with different interactive mediums such as building telematic environments and using facial and body recognition.</p>
-              <button type="button" class="btn btn-dark fs-5">See works</button>
+        <!-- second item : Interactive art -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Interactive Art
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p class="fs-4"><strong>Interactive Art:</strong> I started exploring interactive art in highschool, playing with TouchDesigner and Arduino to create interactive experiences employing sound, touch, and light. I continue to experiment with different interactive mediums such as building telematic environments and using facial and body recognition.</p>
+                <button type="button" class="btn btn-dark fs-5">See works</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              UI/UX Design
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <p class="fs-4"><strong>UI/UX Design:</strong> I enjoy challenging myself to create designs that depends on the user—balancing artistic practices that challenge the boundaries of design and an easy user experience.</p>
-              <button type="button" class="btn btn-dark fs-5">See works</button>
+        <!-- third item : UI/UX Design -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                UI/UX Design
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p class="fs-4"><strong>UI/UX Design:</strong> I enjoy challenging myself to create designs that depends on the user—balancing artistic practices that challenge the boundaries of design and an easy user experience.</p>
+                <button type="button" class="btn btn-dark fs-5">See works</button>
+              </div>
             </div>
           </div>
-        </div>
+      </div>
     </div>
-    </div>
+    <!-- featured section that displays highlights of my portfolio in cards-->
     <div class="portfolio my-5 container-sm text-left">
         <h2 class="m-4 display-5">Featured</h2>
         <div class="row justify-content-center my-4">
+          <!-- each card resizes at md, lg window sizes, from one (mobile) to two (tablet) to three (desktop) per row -->
             <div class="col-8 col-md-5 col-lg-3 m-2 ml-auto">
                 <div class="card text-bg-dark border-0">
                     <img src="images/p1.png" class="card-img w-100" alt="love-alarm">
@@ -208,11 +226,12 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- adding background for the nav bar since it's fixed and so adding a 
+      background would separate it from the rest of the content -->
     <script>
         var navBar = document.getElementById("nav");
         function update(){
           if (window.pageYOffset > 50){
-            // console.log(navBar.classList);
             navBar.classList.replace("bg-transparent", "bg-dark");
           }
           else{
